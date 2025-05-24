@@ -3,29 +3,11 @@ package tests;
 import org.junit.jupiter.api.Test;
 import pages.PracticeFormPage;
 
-import java.time.LocalDate;
+import static tests.TestData.*;
 
 public class PracticeFormTests extends BaseTest {
 
     PracticeFormPage practiceFormPage = new PracticeFormPage();
-
-    String firstName = "Ivan";
-    String lastName = "Petrov";
-    String email = "ivanpetrov@gmail.com";
-    String gender = "Male";
-    String phoneNumber = "9039998585";
-    String year = "1990";
-    String month = "September";
-    String day = "09";
-    String subject = "Maths";
-    String hobby1 = "Sports";
-    String hobby2 = "Music";
-    String uploadedPicture = "png-avatar.png";
-    String address = "Random street, 103";
-    String state = "Rajasthan";
-    String city = "Jaiselmer";
-    LocalDate today = LocalDate.now();
-    String todayStr = today.getDayOfMonth() + " " + today.getMonth() + "," + today.getYear();
 
     @Test
     void fillStudentRegistrationFormTest() {
